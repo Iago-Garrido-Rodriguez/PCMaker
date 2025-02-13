@@ -23,6 +23,17 @@ html {
 
 
 #logo {
-    height: 10vh; 
+    height: 20vh; 
     width: auto; 
 }
+
+.navbar {
+    background-color: #565a5b !important;
+    border-bottom: none;
+    border: solid 10px #f79045;
+    color: #f79045;
+}
+    .nav-link {
+        color: #f79045 !important;
+    }
+
