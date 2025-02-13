@@ -1,3 +1,4 @@
+using PCMaker.Models;
 namespace PCMaker
 {
     public class Program
@@ -8,7 +9,7 @@ namespace PCMaker
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
+            builder.Services.AddSingleton(new Conexion(builder.Configuration.GetConnectionString("PCMaker")));
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
